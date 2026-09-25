@@ -1,0 +1,6 @@
+{
+  "name": "NEXUS",
+  "description": "AI-powered personal knowledge and simulation engine. Understand, connect, explain, simulate, practice, and remember.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
