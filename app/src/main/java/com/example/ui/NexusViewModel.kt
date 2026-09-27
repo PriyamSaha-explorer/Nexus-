@@ -17,6 +17,7 @@ import com.example.data.model.NexusChatMessage
 import com.example.data.model.Question
 import com.example.data.remote.GeminiClient
 import com.example.data.remote.NexusAiService
+import com.example.data.repository.GeminiAiRepository
 import com.example.data.repository.NexusRepository
 import com.example.ui.simulation.SimulationType
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -55,6 +56,7 @@ data class DiagnosticResult(
 class NexusViewModel(application: Application) : AndroidViewModel(application) {
     private val repository = NexusRepository(application)
     private val aiService = NexusAiService()
+    val geminiAiRepository = GeminiAiRepository()
 
     // Navigation
     private val _currentScreen = MutableStateFlow(AppScreen.DASHBOARD)
